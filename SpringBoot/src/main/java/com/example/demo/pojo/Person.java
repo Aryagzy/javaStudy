@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
+import org.springframework.validation.annotation.Validated;
 
 import java.util.Date;
 import java.util.List;
@@ -21,6 +22,7 @@ import java.util.Map;
 @ConfigurationProperties(prefix = "person")
 //加载指定的配置文件
 //@PropertySource(value = "classpath:qingjiang.propterties")
+@Validated //数据校验
 public class Person {
     //直接使用@Value
     @Value("${person.name}")  //从配置文件中取值
