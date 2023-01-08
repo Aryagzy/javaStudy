@@ -1,0 +1,19 @@
+#yaml可以直接给实体类赋值
+person:
+  name: guoguo
+  age: 12
+  happy: true
+  birth: 2011/12/11
+  maps: {k1: v1,k2: v2}
+  lists:
+    -code
+    -music
+    -boy
+  dos:
+    name: 旺财
+    age: 4
+# 关闭默认图标
+spring:
+  mvc:
+    favicon:
+      enabled=false:
